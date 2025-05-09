@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi - Dokumentasi Hewan Laut</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #3498db;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        video {
+            max-width: 100%;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Modul Gambar dan Suara Hewan</h1>
+        <nav>
+            <ul>
+                <li><a href="<?= base_url() ?>">Beranda</a></li>
+                <li><a href="<?= base_url('modul') ?>">Modul</a></li>
+                <li><a href="<?= base_url('materi') ?>">Materi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Dokumentasi Kehidupan Hewan Laut</h1>
+        <p>Video ini menampilkan berbagai macam hewan laut yang hidup di lautan luas.</p>
+        
+        <video controls poster="assets/images/hewan-laut-thumbnail.jpg">
+            <source src="assets/videos/hewan-laut.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutaran video.
+        </video>
+
+        <p style="margin-top: 20px;">
+            Tonton video dokumentasi ini untuk mengenal lebih dekat kehidupan hewan-hewan laut yang luar biasa.
+        </p>
+    </div>
+
+    <footer>
+        &copy; <?= date('Y'); ?> Website Hewan - Semua Hak Dilindungi
+    </footer>
+
+</body>
+</html>

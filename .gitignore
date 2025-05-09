@@ -1,0 +1,15 @@
+*.mp4
+*.mp3
+system/
+test/
+writable/
+app/Database/
+app/Filters/
+app/Helpers/
+app/language/
+app/Linraries/
+app/Models/
+app/ThirdParty/
+public/assets/audio/
+public/assets/videos/
+public/assets/img/
